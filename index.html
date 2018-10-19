@@ -526,22 +526,16 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 						<div class="col-md-7 col-md-push-1">
 							<div class="row">
 								<div class="col-md-10 col-md-offset-1 col-md-pull-1 animate-box" data-animate-effect="fadeInRight">
-									<form method="POST" class="gform" data-email="edselnorwood83@gmail.com" action="https://script.google.com/macros/s/AKfycby6BIiV5ZUT51lRTVzFnjhD_4MBs3Lm9NdbNaZvWg/exec">
-										<div class="form-group">
-											<input type="text" class="form-control" placeholder="Name" name="name">
-										</div>
-										<div class="form-group">
-											<input type="text" class="form-control" placeholder="Email" name="email">
-										</div>
-										<div class="form-group">
-											<input type="text" class="form-control" placeholder="Subject" name="subject">
-										</div>
-										<div class="form-group">
-											<textarea name="message" id="message" cols="30" rows="7" class="form-control" placeholder="Message"></textarea>
-										</div>
-										<div class="form-group">
-											<input type="submit" class="btn btn-primary btn-send-message" name="submit" value="Send Message">
-										</div>
+									<form method="POST" class="gform" action="https://script.google.com/macros/s/AKfycbxKl5ivqKx2xG6pQQ4qyMLklfKssgu2-yJ-GMRM_SI8qDBPcp9a/exec">
+										<input type="text" class="form-control" placeholder="Name" name="name">
+										<br>
+										<input type="text" class="form-control" placeholder="Email" name="email">
+										<br>
+										<input type="text" class="form-control" placeholder="Subject" name="subject">
+										<br>
+										<textarea name="message" id="message" cols="30" rows="7" class="form-control" placeholder="Message"></textarea>
+										<br>
+										<input type="submit" onClick="this.disabled=true; this.value='Sent';" class="btn btn-primary btn-send-message" name="submit" value="Send Message">
 									</form>
 								</div>
 								
@@ -573,6 +567,7 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 	
 	<!-- MAIN JS -->
 	<script src="js/main.js"></script>
+	<script data-cfasync="false" type="text/javascript" src="form-submission-handler.js"></script>
 
 	</body>
 </html>
